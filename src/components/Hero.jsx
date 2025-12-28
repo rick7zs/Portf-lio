@@ -116,14 +116,16 @@ export default function Hero({ fotoPerfil }) {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(200,0,255,0.25),transparent_60%)]" />
 
       {/* CARD */}
-      <div
-        ref={card}
-        className="
-          relative z-10 w-full max-w-6xl p-14
-          bg-[#0b0e19]/60 backdrop-blur-2xl rounded-[32px]
-          border border-purple-400/20
-          shadow-[0_0_130px_20px_rgba(150,0,255,0.15)]
-          flex items-center gap-14
+<div
+  ref={card}
+  className="
+    relative z-10 w-full max-w-6xl 
+    p-8 md:p-14           /* Padding menor no mobile */
+    bg-[#0b0e19]/60 backdrop-blur-2xl rounded-[32px]
+    border border-purple-400/20
+    shadow-[0_0_130px_20px_rgba(150,0,255,0.15)]
+    flex flex-col-reverse md:flex-row /* Empilha no mobile, lado a lado no desktop */
+    items-center gap-10 md:gap-14
         "
         style={{ transformStyle: "preserve-3d" }}
       >
@@ -163,11 +165,13 @@ export default function Hero({ fotoPerfil }) {
         </div>
 
         {/* FOTO */}
-        <div
-          ref={photo}
-          className="
-            relative w-[290px] h-[290px] rounded-3xl overflow-hidden
-            shadow-[0_0_60px_rgba(150,0,255,0.4)]
+  <div
+    ref={photo}
+    className="
+      relative 
+      w-[220px] h-[220px] md:w-[290px] md:h-[290px] /* Tamanho responsivo */
+      rounded-3xl overflow-hidden
+      shadow-[0_0_60px_rgba(150,0,255,0.4)]
           "
           style={{ transform: "translateZ(100px)" }}
         >

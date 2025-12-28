@@ -9,7 +9,7 @@ export default function Navbar() {
         </h1>
 
         {/* MENU */}
-        <ul className="flex gap-8 text-sm font-medium">
+        <ul className="hidden md:flex gap-8">
           <li>
             <a href="#inicio" className="hover:text-cyan-300 transition">
               Início
