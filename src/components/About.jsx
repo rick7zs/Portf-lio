@@ -22,10 +22,10 @@ export default function About() {
       >
         {/* TÍTULO */}
         <div className="mb-10">
-          <p className="text-sm uppercase tracking-widest text-purple-300">
+          <p className="text-3xl md:text-5xl uppercase tracking-widest text-purple-300">
             Sobre mim
           </p>
-          <h2 className="text-5xl font-extrabold mt-2 bg-gradient-to-r from-white via-purple-200 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-5xl font-extrabold mt-2 bg-gradient-to-r from-white via-purple-200 to-purple-500 bg-clip-text text-transparent">
             Quem é o Henrique Dourado?
           </h2>
         </div>
@@ -54,7 +54,7 @@ export default function About() {
           </div>
 
           {/* DESTAQUES */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { title: "+1 anos", desc: "Experiência prática" },
               { title: "Full Stack", desc: "Front + Back" },
